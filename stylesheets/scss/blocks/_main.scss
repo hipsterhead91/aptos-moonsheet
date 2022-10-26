@@ -1,0 +1,45 @@
+.main {
+  width: 100%;
+  @include flex(column, center);
+}
+
+.main__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px 0 0 0;
+  @include flex(row, normal, space-between);
+
+  @media screen and (max-width: 1399px) {
+    padding: 0 40px 0 40px;
+    margin: 40px 0 0 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 32px 0 32px;
+  }
+
+  @media screen and (max-width: 991px) {
+    margin: 120px 0 0 0;
+    @include flex(column, center, flex-start);
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 24px 0 24px;
+    margin: 100px 0 0 0;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0 16px 0 16px;
+    margin: 80px 0 0 0;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 0 12px 0 12px;
+    margin: 60px 0 0 0;
+  }
+
+  @media screen and (max-width: 359px) {
+    padding: 0 8px 0 8px;
+    margin: 48px 0 0 0;
+  }
+}

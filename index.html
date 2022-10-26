@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aptos Moonsheet</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="overlay"></div>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo"></div>
+        <span class="header__subheading">Moonsheet</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+        <!-- INFO -->
+        <ul class="info">
+          <li class="info__text">
+            <span class="info__heading">Total Supply:</span>
+            <span class="info__data">100.000.000 $ALT</span>
+          </li>
+          <li class="info__text">
+            <span class="info__heading">Initial Supply:</span>
+            <span class="info__data">12.750.000 $ALT</span>
+          </li>
+          <li class="info__text">
+            <span class="info__heading">Public Price:</span>
+            <span class="info__data">0.07$</span>
+          </li>
+          <li class="info__text">
+            <span class="info__heading">Chain:</span>
+            <span class="info__data">APT<div class="info__data-logo"></div>S</span>
+          </li>
+          <li class="info__text">
+            <span class="info__heading">Date:</span>
+            <span class="info__data">Mid Nov 2022</span>
+          </li>
+          <li class="info__text">
+            <span class="info__heading">Ticker:</span>
+            <span class="info__data">$ALT</span>
+          </li>
+        </ul>
+
+        <!-- TABLE -->
+        <ul class="table">
+          <li class="table__line table__line_heading">
+            <span class="table__roi">ROI</span>
+            <span class="table__price">Price</span>
+            <span class="table__cap">Cap</span>
+          </li>
+          <li class="table__line">
+            <span class="table__roi">300x</span>
+            <span class="table__price">21.00$</span>
+            <span class="table__cap">267.000.000</span>
+          </li>
+          <li class="table__line">
+            <span class="table__roi">200x</span>
+            <span class="table__price">14.00$</span>
+            <span class="table__cap">178.500.000</span>
+          </li>
+          <li class="table__line">
+            <span class="table__roi">100x</span>
+            <span class="table__price">7.00$</span>
+            <span class="table__cap">89.250.000</span>
+          </li>
+          <li class="table__line">
+            <span class="table__roi">50x</span>
+            <span class="table__price">3.50$</span>
+            <span class="table__cap">44.625.000</span>
+          </li>
+          <li class="table__line">
+            <span class="table__roi">30x</span>
+            <span class="table__price">2.10$</span>
+            <span class="table__cap">26.775.000</span>
+          </li>
+          <li class="table__line">
+            <span class="table__roi">20x</span>
+            <span class="table__price">1.40$</span>
+            <span class="table__cap">17.850.000</span>
+          </li>
+          <li class="table__line">
+            <span class="table__roi">10x</span>
+            <span class="table__price">0.70$</span>
+            <span class="table__cap">8.925.000</span>
+          </li>
+          <li class="table__line">
+            <span class="table__roi">5x</span>
+            <span class="table__price">0.30$</span>
+            <span class="table__cap">4.462.000</span>
+          </li>
+          <li class="table__line">
+            <span class="table__roi">1x</span>
+            <span class="table__price">0.07$</span>
+            <span class="table__cap">892.000</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__links">
+          <a id="twitter-link" class="footer__link" href="https://twitter.com/AptoslaunchIO">
+            <div id="twitter-icon" class="footer__icon"></div> @AptosLaunchIO
+          </a>
+          <a id="site-link" class="footer__link" href="https://aptoslaunch.io/">
+            <div id="site-icon" class="footer__icon"></div> aptoslaunch.io
+          </a>
+          <a id="discord-link" class="footer__link" href="https://discord.com/invite/cC33ryfSx8">
+            <div id="discord-icon" class="footer__icon"></div> AptosLaunchIO
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./scripts/background.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aptos Moonsheet</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="overlay"></div>
+  <div class="page">
+
+
+    <header class="header">
+      <div class="header__logo"></div>
+      <span class="header__subheading">Moonsheet</span>
+    </header>
+
+    <main class="main">
+
+      <ul class="info">
+        <li class="info__text">
+          <span class="info__heading">Total Supply:</span>
+          <span class="info__data">100.000.000 $ALT</span>
+        </li>
+        <li class="info__text">
+          <span class="info__heading">Initial Supply:</span>
+          <span class="info__data">12.750.000 $ALT</span>
+        </li>
+        <li class="info__text">
+          <span class="info__heading">Public Price:</span>
+          <span class="info__data">0.07$</span>
+        </li>
+        <li class="info__text">
+          <span class="info__heading">Chain:</span>
+          <span class="info__data">APT<div class="info__data-logo"></div>S</span>
+        </li>
+        <li class="info__text">
+          <span class="info__heading">Date:</span>
+          <span class="info__data">Mid Nov 2022</span>
+        </li>
+        <li class="info__text">
+          <span class="info__heading">Ticker:</span>
+          <span class="info__data">$ALT</span>
+        </li>
+      </ul>
+
+
+      <ul class="table">
+        <li class="table__line table__line_heading">
+          <span class="table__roi">ROI</span>
+          <span class="table__price">Price</span>
+          <span class="table__cap">Cap</span>
+        </li>
+        <li class="table__line">
+          <span class="table__roi">300x</span>
+          <span class="table__price">21.00$</span>
+          <span class="table__cap">267.000.000</span>
+        </li>
+        <li class="table__line">
+          <span class="table__roi">200x</span>
+          <span class="table__price">14.00$</span>
+          <span class="table__cap">178.500.000</span>
+        </li>
+        <li class="table__line">
+          <span class="table__roi">100x</span>
+          <span class="table__price">7.00$</span>
+          <span class="table__cap">89.250.000</span>
+        </li>
+        <li class="table__line">
+          <span class="table__roi">50x</span>
+          <span class="table__price">3.50$</span>
+          <span class="table__cap">44.625.000</span>
+        </li>
+        <li class="table__line">
+          <span class="table__roi">30x</span>
+          <span class="table__price">2.10$</span>
+          <span class="table__cap">26.775.000</span>
+        </li>
+        <li class="table__line">
+          <span class="table__roi">20x</span>
+          <span class="table__price">1.40$</span>
+          <span class="table__cap">17.850.000</span>
+        </li>
+        <li class="table__line">
+          <span class="table__roi">10x</span>
+          <span class="table__price">0.70$</span>
+          <span class="table__cap">8.925.000</span>
+        </li>
+        <li class="table__line">
+          <span class="table__roi">5x</span>
+          <span class="table__price">0.30$</span>
+          <span class="table__cap">4.462.000</span>
+        </li>
+        <li class="table__line">
+          <span class="table__roi">1x</span>
+          <span class="table__price">0.07$</span>
+          <span class="table__cap">892.000</span>
+        </li>
+      </ul>
+    </main>
+
+
+    <footer class="footer">
+      <a class="footer__link" href="https://twitter.com/AptoslaunchIO"><div id="twitter" class="footer__icon"></div> @AptosLaunchIO</a>
+      <a class="footer__link" href="https://aptoslaunch.io/"><div id="site" class="footer__icon"></div> aptoslaunch.io</a>
+      <a class="footer__link" href="https://discord.com/invite/cC33ryfSx8"><div id="discord" class="footer__icon"></div> AptosLaunchIO</a>
+    </footer>
+  </div>
+
+  <script src="./scripts/background.js"></script>
+</body>
+
+</html> -->

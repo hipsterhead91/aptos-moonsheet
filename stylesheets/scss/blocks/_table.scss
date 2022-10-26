@@ -1,0 +1,420 @@
+.table {
+  width: 50%;
+  @include flex(column);
+
+  @media screen and (max-width: 1399px) {
+    width: 45%;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: none;
+    min-width: 584px;
+    margin: 120px 0 0 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    min-width: 500px;
+    margin: 100px 0 0 0;
+  }
+
+  @media screen and (max-width: 575px) {
+    min-width: 440px;
+    margin: 80px 0 0 0;
+  }
+
+  @media screen and (max-width: 479px) {
+    min-width: 320px;
+    margin: 72px 0 0 0;
+  }
+
+  @media screen and (max-width: 359px) {
+    min-width: 300px;
+    margin: 60px 0 0 0;
+  }
+}
+
+.table__line {
+  width: 100%;
+  margin: 8px 0 0 0;
+  @include flex(row-reverse, center, space-between);
+  font-size: 28px;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+  @media screen and (max-width: 1199px) {
+    margin: 6px 0 0 0;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 991px) {
+    margin: 8px 0 0 0;
+    @include flex(row, center, space-between);
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 8px 0 0 0;
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 479px) {
+    margin: 6px 0 0 0;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 359px) {
+    font-size: 22px;
+  }
+}
+
+.table__line_heading {
+  margin: 0 0 0 0;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e49eff;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: 991px) {
+    font-size: 48px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: 359px) {
+    font-size: 28px;
+  }
+}
+
+.table__roi {
+  width: 25%;
+  text-align: end;
+
+  @media screen and (max-width: 991px) {
+    width: 35%;
+    text-align: start;
+  }
+}
+
+.table__price {
+  width: 30%;
+  text-align: end;
+
+  @media screen and (max-width: 991px) {
+    text-align: start;
+  }
+}
+
+.table__cap {
+  width: 35%;
+  text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .table {
+//   display: flex;
+//   flex-direction: column;
+//   background-color: rgba(255, 0, 0, 0.1);
+
+//   @media screen and (max-width: 991px) {
+//     margin: 80px 0 0 0;
+//   }
+// }
+
+// .table__heading {
+//   display: flex;
+//   flex-direction: row-reverse;
+//   align-items: center;
+//   font-size: 40px;
+//   font-weight: 500;
+//   letter-spacing: 2px;
+//   text-transform: uppercase;
+//   color: #e49eff;
+
+//   @media screen and (max-width: 1199px) {
+//     font-size: 36px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     font-size: 48px;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     font-size: 40px;
+//   }
+
+//   @media screen and (max-width: 575px) {
+//     font-size: 32px;
+//   }
+// }
+
+// .table__heading-roi {
+//   min-width: 100px;
+//   text-align: end;
+// }
+
+// .table__heading-price {
+//   min-width: 132px;
+//   text-align: end;
+// }
+
+// .table__heading-cap {
+//   min-width: 200px;
+//   text-align: end;
+// }
+
+// .table__data {
+//   margin: 8px 0 0 0;
+//   display: flex;
+//   flex-direction: row-reverse;
+//   align-items: center;
+//   font-size: 28px;
+//   color: white;
+
+//   @media screen and (max-width: 1199px) {
+//     margin: 6px 0 0 0;
+//     font-size: 24px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     min-width: 558px;
+//     margin: 8px 0 0 0;
+//     flex-direction: row;
+//     font-size: 36px;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     min-width: 470px;
+//     font-size: 28px;
+//   }
+
+//   @media screen and (max-width: 575px) {
+//     font-size: 24px;
+//   }
+// }
+
+// .table__data-roi {
+//   min-width: 100px;
+//   text-align: end;
+
+//   @media screen and (max-width: 1199px) {
+//     min-width: 80px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     min-width: none;
+//     width: calc(100% / 3);
+//     text-align: start;
+//   }
+// }
+
+// .table__data-price {
+//   min-width: 132px;
+//   margin: 0 40px 0 40px;
+//   text-align: end;
+  
+//   @media screen and (max-width: 1199px) {
+//     min-width: 120px;
+//     margin: 0 32px 0 24px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     min-width: none;
+//     width: calc(100% / 3);
+//     margin: 0 0 0 0;
+//     text-align: start;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     font-size: 40px;
+//   }
+// }
+
+// .table__data-cap {
+//   min-width: 200px;
+//   text-align: end;
+  
+//   @media screen and (max-width: 1199px) {
+//     min-width: 160px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     min-width: none;
+//     width: calc(100% / 3);
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     font-size: 40px;
+//   }
+// }
+
+
+
+// .table {
+//   display: flex;
+//   flex-direction: column;
+//   background-color: rgba(255, 0, 0, 0.1);
+
+//   @media screen and (max-width: 991px) {
+//     margin: 80px 0 0 0;
+//   }
+// }
+
+// .table__row {
+//   display: flex;
+//   flex-direction: row-reverse;
+//   align-items: center;
+//   font-size: 28px;
+//   text-align: end;
+//   color: white;
+
+//   @media screen and (max-width: 1199px) {
+//     font-size: 24px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     min-width: 558px;
+//     flex-direction: row;
+//     font-size: 36px;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     min-width: 470px;
+//     font-size: 28px;
+//   }
+// }
+
+// .table__row:not(:first-child) {
+//   margin: 8px 0 0 0;
+
+//   @media screen and (max-width: 1199px) {
+//     margin: 6px 0 0 0;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     margin: 8px 0 0 0;
+//   }
+// }
+
+// .table__row_heading {
+//   font-size: 40px;
+//   font-weight: 500;
+//   letter-spacing: 2px;
+//   text-transform: uppercase;
+//   color: #e49eff;
+
+//   @media screen and (max-width: 1199px) {
+//     font-size: 36px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     font-size: 48px;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     font-size: 40px;
+//   }
+
+//   @media screen and (max-width: 575px) {
+//     font-size: 32px;
+//   }
+// }
+
+// .table__data-roi {
+//   min-width: 100px;
+
+//   @media screen and (max-width: 1199px) {
+//     min-width: 80px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     min-width: none;
+//     width: calc(100% / 3);
+//     text-align: start;
+//   }
+// }
+
+// .table__data-price {
+//   min-width: 132px;
+//   margin: 0 40px 0 40px;
+  
+//   @media screen and (max-width: 1199px) {
+//     min-width: 120px;
+//     margin: 0 32px 0 24px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     min-width: none;
+//     width: calc(100% / 3);
+//     margin: 0 0 0 0;
+//     text-align: start;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     font-size: 40px;
+//   }
+// }
+
+// .table__data-cap {
+//   min-width: 200px;
+  
+//   @media screen and (max-width: 1199px) {
+//     min-width: 160px;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     min-width: none;
+//     width: calc(100% / 3);
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     font-size: 40px;
+//   }
+// }

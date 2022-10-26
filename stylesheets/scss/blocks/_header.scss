@@ -1,0 +1,91 @@
+.header {
+  width: 100%;
+  @include flex(column, center);
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 0 0 0;
+  @include flex(column, center);
+
+  @media screen and (max-width: 1399px) {
+    padding: 0 40px 0 40px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 32px 0 32px;
+  }
+
+  @media screen and (max-width: 991px) {
+    margin: 40px 0 0 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 24px 0 24px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0 16px 0 16px;
+    margin: 32px 0 0 0;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 0 12px 0 12px;
+    margin: 20px 0 0 0;
+  }
+
+  @media screen and (max-width: 359px) {
+    padding: 0 8px 0 8px;
+  }
+}
+
+.header__logo {
+  min-width: 480px;
+  min-height: 80px;
+  @include bg-image('../../../images/logo.png', center, contain);
+
+  @media screen and (max-width: 991px) {
+    min-width: 584px;
+    min-height: 80px;
+  }
+
+  @media screen and (max-width: 767px) {
+    min-width: 500px;
+  }
+
+  @media screen and (max-width: 575px) {
+    min-width: 440px;
+  }
+
+  @media screen and (max-width: 479px) {
+    min-width: 320px;
+  }
+
+  @media screen and (max-width: 359px) {
+    min-width: 300px;
+  }
+}
+
+.header__subheading {
+  font-family: 'Quantico';
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #40faff;
+
+  @media screen and (max-width: 575px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 479px) {
+    margin: -8px 0 0 0;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 359px) {
+    margin: -12px 0 0 0;
+    font-size: 20px;
+  }
+}

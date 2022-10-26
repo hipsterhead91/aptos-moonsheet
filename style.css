@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+html {
+  font-family: 'Khand', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: white;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.page {
+  z-index: 2;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 100vh;
+  padding: 20px 64px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+
+БРЕЙКПОИНТЫ:
+1199
+991
+767
+575
+479
+359 
+
+*/
+
+
+@media screen and (max-width: 1199px) {
+  .page {
+    padding: 20px 48px 32px 48px;
+  }
+}
+
+
+
+
+/* ШАПКА */
+
+.header {
+  margin: 0 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  min-width: 480px;
+  min-height: 80px;
+  background-image: url(./images/logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__subheading {
+  font-family: 'Quantico';
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #40faff;
+}
+
+
+
+
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+
+/* ТАБЛИЦА */
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.table__row {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 28px;
+  text-align: end;
+  color: white;
+}
+
+.table__row:not(:first-child) {
+  margin: 8px 0 0 0;
+}
+
+.table__row_heading {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e49eff;
+}
+
+.table__data-roi {
+  min-width: 100px;
+}
+
+.table__data-price {
+  min-width: 132px;
+  margin: 0 40px 0 40px;
+}
+
+.table__data-cap {
+  min-width: 200px;
+}
+
+@media screen and (max-width: 1199px) {
+  .table__row {
+    font-size: 24px;
+  }
+  
+  .table__row:not(:first-child) {
+    margin: 6px 0 0 0;
+  }
+  
+  .table__row_heading {
+    font-size: 36px;
+  }
+  
+  .table__data-roi {
+    min-width: 80px;
+  }
+  
+  .table__data-price {
+    min-width: 120px;
+    margin: 0 32px 0 24px;
+  }
+  
+  .table__data-cap {
+    min-width: 160px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .table {
+    margin: 80px 0 0 0;
+  }
+
+  .table__row {
+    font-size: 28px;
+  }
+  
+  .table__row:not(:first-child) {
+    margin: 8px 0 0 0;
+  }
+  
+  .table__row_heading {
+    font-size: 40px;
+  }
+  
+  .table__data-roi {
+    min-width: 100px;
+  }
+  
+  .table__data-price {
+    min-width: 132px;
+    margin: 0 40px 0 40px;
+  }
+  
+  .table__data-cap {
+    min-width: 200px;
+  }
+}
+
+
+
+
+
+/* ИНФО */
+
+.info {
+  margin: 48px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info__heading {
+  margin: 0 12px 0 0;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #e49eff;
+}
+
+.info__data {
+  display: flex;
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+}
+
+.info__data-logo {
+  position: relative;
+  bottom: -2px;
+  width: 38px;
+  height: 38px;
+  background-image: url(./images/logo-mini-colored.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1199px) {
+  .info {
+    margin: 42px 0 0 0;
+  }
+
+  .info__heading {
+    margin: 0 10px 0 0;
+    font-size: 36px;
+  }
+  
+  .info__data {
+    font-size: 36px;
+  }
+  
+  .info__data-logo {
+    bottom: -2px;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+
+
+
+
+/* ПОДВАЛ */
+
+.footer {
+  width: 100%;
+  height: 15%;
+  margin: auto 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #40faff;
+}
+
+.footer__icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 12px 0 0;
+}
+
+#twitter {
+  background-image: url(./images/twitter.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#discord {
+  background-image: url(./images/discord.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#site {
+  width: 52px;
+  height: 52px;
+  background-image: url(./images/site.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

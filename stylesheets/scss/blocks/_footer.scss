@@ -1,0 +1,207 @@
+.footer {
+  width: 100%;
+  margin: auto 0 0 0;
+  @include flex(column, center);
+}
+
+.footer__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 0 40px 0;
+  @include flex(column, center);
+
+  @media screen and (max-width: 1399px) {
+    padding: 0 40px 0 40px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 32px 0 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 24px 0 24px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0 16px 0 16px;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 0 12px 0 12px;
+  }
+
+  @media screen and (max-width: 359px) {
+    padding: 0 8px 0 8px;
+  }
+}
+
+.footer__links {
+  width: 100%;
+  @include flex(row, center, space-between);
+
+  @media screen and (max-width: 991px) {
+    width: none;
+    max-width: 584px;
+    margin: 180px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 36px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 500px;
+    grid-row-gap: 28px;
+  }
+
+  @media screen and (max-width: 575px) {
+    max-width: 440px;
+    margin: 160px 0 0 0;
+    grid-row-gap: 24px;
+  }
+
+  @media screen and (max-width: 479px) {
+    max-width: 320px;
+    margin: 120px 0 0 0;
+    grid-row-gap: 20px;
+  }
+
+  @media screen and (max-width: 359px) {
+    max-width: 300px;
+    margin: 100px 0 0 0;
+    grid-row-gap: 16px;
+  }
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #40faff;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 20px;
+  }
+}
+
+#twitter-link {
+  @media screen and (max-width: 991px) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    @include flex(row, center, flex-start);
+  }
+
+  @media screen and (max-width: 575px) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+#site-link {
+  @media screen and (max-width: 991px) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    @include flex(row, center, flex-start);
+  }
+
+  @media screen and (max-width: 575px) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+#discord-link {
+  @media screen and (max-width: 991px) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    @include flex(row, center, flex-end);
+  }
+
+  @media screen and (max-width: 575px) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    @include flex(row, center, flex-start);
+  }
+}
+
+.footer__icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 12px 0 0;
+
+  @media screen and (max-width: 1199px) {
+    width: 56px;
+    height: 56px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+#twitter-icon {
+  background-image: url(../../../images/twitter.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#discord-icon {
+  background-image: url(../../../images/discord.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#site-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 16px 0 0;
+  background-image: url(../../../images/site.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+    margin: 0 14px 0 0;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 32px;
+    height: 32px;
+    margin: 0 12px 0 0;
+  }
+}

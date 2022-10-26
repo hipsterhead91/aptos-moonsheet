@@ -1,0 +1,22 @@
+// VARIABLES
+
+$color-main:        #7B6456;
+$color-second:      #91786e;
+
+
+
+// MIXINS
+
+@mixin flex($direction: row, $align: normal, $justify: start) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin bg-image($link, $position: center, $size: cover, $repeat: no-repeat) {
+  background-image: url($link);
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+}

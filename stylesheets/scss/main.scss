@@ -1,0 +1,19 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+
+// RESET STYLES
+@import '../../node_modules/normalize-scss/sass/normalize';
+@import 'default-styles';
+
+// SCSS VARIABLES, MIXINS
+@import 'utils';
+
+// BLOCKS
+@import 'blocks/overlay';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/table';
+@import 'blocks/info';
+@import 'blocks/footer';
