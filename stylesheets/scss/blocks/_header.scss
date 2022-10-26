@@ -43,7 +43,7 @@
 .header__logo {
   min-width: 480px;
   min-height: 80px;
-  @include bg-image('../../../images/logo.png', center, contain);
+  @include bg-image('../images/logo.png', center, contain);
 
   @media screen and (max-width: 991px) {
     min-width: 584px;
